@@ -43,7 +43,7 @@ public class Biblioteca {
 	 * @param genero género de los libros a buscar
 	 * @return lista de libros del género pedido, si el género no existe se devuelve una lista vacía
 	 */
-	public List<Libro> librosGenero(String genero) {
+	public List<Libro> librosPorGenero(String genero) {
 		return libros_genero.getOrDefault(genero, new ArrayList<>()); 
 	}
 	
@@ -53,7 +53,7 @@ public class Biblioteca {
 	 * @param añoPublicacion año a partir del cual se buscan los libros
 	 * @return lista de libros que se publicaron después del año solicitado
 	 */
-	public List<Libro> librosAno(int añoPublicacion) {
+	public List<Libro> librosPosterioresA(int añoPublicacion) {
 		List<Libro> librosAño = new ArrayList<>();
 		SortedMap <Integer, List<Libro>> tail = libros_año.tailMap(añoPublicacion, false);
 		for(List<Libro> listaAño : tail.values())
