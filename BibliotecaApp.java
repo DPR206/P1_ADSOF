@@ -1,3 +1,10 @@
+/**
+ * Este paquete contiene las clases necesarias para la gestión de libros
+ * así como para el tratamiento de una biblioteca categorizando dichos libros
+ * en función del año y el género
+ */
+package p1;
+
 import java.util.*;
 
 /**
@@ -34,4 +41,5 @@ public class BibliotecaApp {
     libros.add(new Libro("4", "Con viento solano", "Ignacio Aldecoa", 1, 2012, "Novela"));
     System.out.println(libros);
   }
+
 }
