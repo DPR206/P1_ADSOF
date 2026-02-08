@@ -1,4 +1,11 @@
 /**
+ * Este paquete contiene las clases necesarias para la gestión de libros
+ * así como para el tratamiento de una biblioteca categorizando dichos libros
+ * en función del año y el género
+ */
+package p1;
+
+/**
  * Esta clase representa un libro
  * @author Duna Puente y Claudia Saiz
  * @version 1.1
@@ -113,4 +120,5 @@ public class Libro {
   public String toString() {
     return "ISBN: " + this.isbn + ". " + this.descripcion() + " (" + this.ejemplaresDisponibles + " ejemplares disponibles)";
   }
+
 }
