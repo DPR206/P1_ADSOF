@@ -1,5 +1,11 @@
-import java.util.*;
+/**
+ * Este paquete contiene las clases necesarias para la gestión de libros
+ * así como para el tratamiento de una biblioteca categorizando dichos libros
+ * en función del año y el género
+ */
+package p1;
 
+import java.util.*;
 /**
  * Esta clase prueba las funcionalidades de las clases biblioteca y libro
  * @author Duna Puente y Claudia Saiz
@@ -23,9 +29,9 @@ public class Test1 {
     Biblioteca biblioteca = new Biblioteca("Miguel Delibes");
 
     // Se añaden los libros a la biblioteca
-    biblioteca.añadirLibro(libro1);
-    biblioteca.añadirLibro(libro2);
-    biblioteca.añadirLibro(libro3);
+    biblioteca.nuevolibro(libro1);
+    biblioteca.nuevolibro(libro2);
+    biblioteca.nuevolibro(libro3);
     
     // Se imprimen por pantalla los libros de género "Novela"
     System.out.println(biblioteca.librosPorGenero("Novela"));
